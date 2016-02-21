@@ -134,6 +134,26 @@ class CelestialBody(pg.sprite.Sprite):
         self.animations.update(dt)
 
 
+class DayNightCycle(object):
+    def __init__(self, start_hour, start_minute, minute_length):
+        self.minute_length = minute_length
+        h, m = start_hour, start_minute
+        self.timer = ((h * 60) + m) * self.minute_length
+
+    @property
+    def minutes(self):
+        return (self.timer // self.minute_length) % (24 * 60)
+
+    @property
+    def clock_time(self):
+        minutes = self.minutes
+        hours, minutes = divmod(minutes, 60)
+        return hours, minutes
+
+    def update(self, dt):
+        self.timer += dt
+
+
 class World(object):
     colors = {
             "day": {
@@ -160,7 +180,7 @@ class World(object):
         self.ground_rect = pg.Rect(0, h - ground_h, w, ground_h)
         self.active = machine_active
         self.reset()
-        
+
     def reset(self):
         self.done = False
         minute_length = 60
@@ -178,9 +198,9 @@ class World(object):
         self.level_num = 6
         self.nighttime = False
         self.level_up()
-        
+
     def level_up(self):
-        max_level = max(LEVELS)    
+        max_level = max(LEVELS)
         if self.level_num < max_level:
             self.level_num += 1
             level = LEVELS[self.level_num]
@@ -239,27 +259,6 @@ class World(object):
         else:
             self.nighttime = True
         if nighttime and not self.nighttime:
-            self.level_up() 
+            self.level_up()
         self.skeet_machine.update(dt)
         self.clays.update(dt)
-
-
-class DayNightCycle(object):
-    def __init__(self, start_hour, start_minute, minute_length):
-        self.minute_length = minute_length
-        h, m = start_hour, start_minute
-        self.timer = ((h * 60) + m) * self.minute_length
-
-    @property
-    def minutes(self):
-        return (self.timer // self.minute_length) % (24 * 60)
-
-    @property
-    def clock_time(self):
-        minutes = self.minutes
-        hours, minutes = divmod(minutes, 60)
-        return hours, minutes
-
-    def update(self, dt):
-        self.timer += dt
-

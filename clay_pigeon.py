@@ -46,9 +46,9 @@ class ClayPigeon(pg.sprite.Sprite):
         self.z_velocity = (z / magnitude) * firing_speed
         self.y_velocity = (y / magnitude) * firing_speed
         self.x_velocity = (x / magnitude) * firing_speed
-        dist = ((fs**2)*sin(2*pitch)) / -GRAVITY 
+        dist = ((fs**2)*sin(2*pitch)) / -GRAVITY
         self.flight_time = (dist / (fs*cos(pitch))) * .85
-        
+
         self.animations = pg.sprite.Group()
         self.timer = 0
         self.alpha = 255
@@ -83,7 +83,7 @@ class ClayPigeon(pg.sprite.Sprite):
         elapsed = self.timer / self.speed
         if elapsed > self.flight_time:
             self.kill()
-        
+
         self.animations.update(dt)
 
         dy = (self.y_velocity * elapsed) - (.5 * GRAVITY * elapsed**2)

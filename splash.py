@@ -31,10 +31,10 @@ class Splash(GameState):
             ani = Animation(centerx=x, centery=y, duration=duration, delay=delay, round_values=True)
             ani.start(clay.rect)
             self.animations.add(ani)
-            
+
             delay += 15
             depth -= 1
-    
+
         self.world = World(False)
         for s in self.all_sprites:
             self.all_sprites.change_layer(s, -s.z)
@@ -44,7 +44,7 @@ class Splash(GameState):
         except IOError:
             with open(os.path.join("resources", "high_scores.json"), "w") as f:
                 json.dump([], f)
-                
+
     def startup(self, persistent):
         self.persist = persistent
 
@@ -57,12 +57,12 @@ class Splash(GameState):
     def update(self, dt):
         self.animations.update(dt)
         self.world.update(dt)
-        
+
     def draw(self, surface):
         surface.fill(self.world.sky)
         surface.fill(self.world.grass, self.world.ground_rect)
         self.all_sprites.draw(surface)
-        
-        
+
+
 
 

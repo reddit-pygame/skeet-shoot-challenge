@@ -1,6 +1,32 @@
-skeet_machine.ogg
-https://freesound.org/people/olga/sounds/16951/
+LICENSES
 
-https://freesound.org/people/olga/
+CC-BY 3.0        http://creativecommons.org/licenses/by/3.0/legalcode
+CC-BY-SA 3.0   http://creativecommons.org/licenses/by-sa/3.0/legalcode
+CC-BY-NC 3.0  http://creativecommons.org/licenses/by-nc/3.0/
+CC0                 https://creativecommons.org/publicdomain/zero/1.0/legalcode
+OGA-BY-3.0     http://static.opengameart.org/OGA-BY-3.0.txt
 
-CC0
+CODE
+
+All code is CC0-licensed.
+
+
+GRAPHICS
+
+Graphics are my own work (like you couldn't tell) and are CC0-licensed.
+
+
+SOUNDS
+
+File name: skeet_machine.ogg
+Source: https://freesound.org/people/olga/sounds/16951/
+Author:  https://freesound.org/people/olga/
+License: CC0
+
+
+
+
+
+
+
+

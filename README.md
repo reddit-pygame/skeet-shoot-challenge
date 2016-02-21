@@ -2,7 +2,7 @@
 
 This challenge focuses on replacing the mouse cursor with an image. The provided code is a skeet shooting game (a la Duck Hunt) with a day/night cycle and persistent high scores.
  
-Github repo:
+Github repo: https://github.com/reddit-pygame/skeet-shoot-challenge
  
 Challenge thread: 
  
@@ -28,7 +28,7 @@ The game uses a day/night cycle with clays becoming faster and less predictable 
 
 #Challenge
 
-*Set Your Sights* Replace the mouse cursor with a reticle (crosshair). There is a crosshair image included for your convenience or you can find one more to your liking.
+*Set Your Sights* Replace the mouse cursor with a reticle (crosshair). There is a crosshair image included for your convenience (in resources\graphics) or you can find one more to your liking.
 
 #Achievements
 
