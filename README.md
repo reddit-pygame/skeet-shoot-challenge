@@ -20,11 +20,11 @@ The game uses a day/night cycle with clays becoming faster and less predictable 
 
 ##Controls
 
-*Left click* Fire gun
+**Left click** Fire gun
 
-*F* Toggle fullscreen
+**F** Toggle fullscreen
 
-*ESC* Exit
+**ESC** Exit
 
 #Challenge
 
