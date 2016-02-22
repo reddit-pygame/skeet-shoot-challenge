@@ -195,7 +195,7 @@ class World(object):
                                                       minute_length, self.all_sprites),
                                  CelestialBody("moon", (640, 900), 900, 0,
                                                       minute_length, self.all_sprites)]
-        self.level_num = 6
+        self.level_num = 0
         self.nighttime = False
         self.level_up()
 

@@ -2,6 +2,8 @@
 
 This challenge focuses on replacing the mouse cursor with an image. The provided code is a skeet shooting game (a la Duck Hunt) with a day/night cycle and persistent high scores.
  
+Github repo: https://github.com/reddit-pygame/skeet-shoot-challenge
+ 
 Challenge thread: https://www.reddit.com/r/pygame/comments/46xbxo/challenge_skeet_shoot/
  
 #How it Works
